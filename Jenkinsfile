@@ -10,7 +10,7 @@ pipeline {
       stage('Build') {
          steps {
            git 'https://github.com/Kurt1s/m3training.git'
-           sh cp /usr/share/nginx/html *
+           sh 'cp * /usr/share/nginx/html'
            echo pwd()
          }
       }
